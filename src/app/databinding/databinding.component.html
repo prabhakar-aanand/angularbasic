@@ -1,0 +1,25 @@
+<h2 appHighlight>Databinding</h2>
+
+<h4>Interpolations</h4>
+Cpmpany : {{company}}
+Name : {{name}}
+<div>
+    Name: <input type="text" value="{{name}}" />
+</div>
+
+<h4 class="appHighlight">Property Binding </h4> 
+<input type="text" [value]="name">
+<a [href]="site">Google</a>
+
+<h4> Event Binding </h4>
+<button (click)="greet()">Click Me</button>
+
+
+<div>
+    <h4>Two Way Binding</h4>
+    <input type="text" [(ngModel)] ="name" />
+</div>
+
+
+
+

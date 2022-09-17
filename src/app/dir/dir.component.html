@@ -1,0 +1,24 @@
+<h2>Directive</h2>
+<hr/>
+<input type="number" [(ngModel)]="num" />
+<h4>ngIf</h4>
+<div *ngIf="num!=undefined && num%2==0">Even Number</div>
+<div *ngIf="num!=undefined && num%2>0">Odd Number</div>
+
+<h4>ngIf..Else</h4>
+<div *ngIf="num!=undefined && num%2==0 then templif; else templelse "></div>
+<ng-template #templif>Even Number </ng-template>
+<ng-template #templelse> Odd Number</ng-template>
+
+<h4>ngFor</h4>
+<div>Color :
+<select [(ngModel)]="color">
+    <option [value]="''">--Select--</option>
+    <option *ngFor=" let item of colors " [value]="item" >{{item}} </option>
+</select>
+<div [ngStyle]="{'color':color}">Selected color: {{color}}</div>
+<div [ngClass]="{'color-class':color=='red'}">Selected color: {{color}}</div>
+</div>
+
+
+
