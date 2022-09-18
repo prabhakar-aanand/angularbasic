@@ -14,6 +14,8 @@ import { ChildComponent } from './inheritance/child/child.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MasterComponent } from './nested/master/master.component';
 import { DetailsComponent } from './nested/details/details.component';
+import { FormComponent } from './projection/form/form.component';
+import { MainComponent } from './projection/main/main.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { DetailsComponent } from './nested/details/details.component';
     ChildComponent,
     HeaderComponent,
     MasterComponent,
-    DetailsComponent
+    DetailsComponent,
+    FormComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

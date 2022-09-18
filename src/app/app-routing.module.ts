@@ -6,14 +6,16 @@ import { DirComponent } from './dir/dir.component';
 import { ChildComponent } from './inheritance/child/child.component';
 import { MasterComponent } from './nested/master/master.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { FormComponent } from './projection/form/form.component';
+import { MainComponent } from './projection/main/main.component';
 
 const routes: Routes = [
   {path:'', component:DatabindingComponent},
   {path:'dir', component:DirComponent},
   {path:'pipe',component:PipeComponent},
   {path:'inheritance',component:ChildComponent},
-  {path:'nested',component:MasterComponent}
-  
+  {path:'nested',component:MasterComponent},
+  {path:'projection',component:MainComponent}
 ];
 
 @NgModule({
