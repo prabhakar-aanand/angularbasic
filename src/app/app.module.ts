@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,8 @@ import { MasterComponent } from './nested/master/master.component';
 import { DetailsComponent } from './nested/details/details.component';
 import { FormComponent } from './projection/form/form.component';
 import { MainComponent } from './projection/main/main.component';
+import { ParenthooksComponent } from './hooks/parenthooks/parenthooks.component';
+import { ChildhooksComponent } from './hooks/childhooks/childhooks.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +34,14 @@ import { MainComponent } from './projection/main/main.component';
     MasterComponent,
     DetailsComponent,
     FormComponent,
-    MainComponent
+    MainComponent,
+    ParenthooksComponent,
+    ChildhooksComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
 
   ],
